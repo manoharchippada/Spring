@@ -1,0 +1,24 @@
+package com.p1;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.*;
+
+public class EmployeeController {
+	public static void main(String [] args)
+	{
+		Employee emp= new Employee();
+		Scanner sc=new Scanner(System.in);
+		System.out.print("ENTER THE NAME OF EMPLOYEE: ");
+		String str=sc.nextLine();
+		emp.setName(str);
+		System.out.print("ENTER THE ID: ");
+		
+		emp.setId(sc.nextInt());
+		
+		System.out.print("ENTER THE SALARY: ");
+		double sal=sc.nextDouble();
+		emp.setSalary(sal);
+		System.out.println(emp);
+	}
+
+}
